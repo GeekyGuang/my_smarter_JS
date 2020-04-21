@@ -28,6 +28,17 @@ var name = "michael" + "Jacson" + 111  // 数字会自动转换为string
 alert("2" + 2)  // 22
 ```
 
+- prompt
+```javascript
+// All responses to prompts come back as strings. 
+var spec = prompt("Your species?", "human")  // 第一个参数是提示语，第二个是默认值，返回string
+// 如果点了取消，赋值为null
+```
+
+- alert + prompt
+```
+alert("Hello " + prompt("name?", "lucy"));
+```
 
 
 
