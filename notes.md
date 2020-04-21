@@ -21,6 +21,16 @@ var newNum = num++; // newNum = 1, num = 2
 var newNum = ++num; // newNum = 2, num = 2
 ```
 
+- concatenate
+```javascript
+var name = "michael" + "Jacson" + 111  // 数字会自动转换为string
+
+alert("2" + 2)  // 22
+```
+
+
+
+
 
 
 
