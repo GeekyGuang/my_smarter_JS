@@ -40,6 +40,13 @@ var spec = prompt("Your species?", "human")  // 第一个参数是提示语，�
 alert("Hello " + prompt("name?", "lucy"));
 ```
 
+- if
+```javascript
+var name = prompt("name?", "Lucy");
+if (name === "Lucy") {
+    alert("Hello " + name);
+}
+```
 
 
 
