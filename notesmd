@@ -8,5 +8,7 @@ alert(thanx);
 alert(133); // alert会把括号内的值转换为字符串
 ```
 
+- Variable names are case sensitive, use camelCase
+
 
 
