@@ -56,6 +56,25 @@ if (name === "Lucy") {
 !=
 ```
 
+- if...else
+```javascript
+var name = prompt("your name?");
+
+if (name === "a") {
+    alert("a");
+}
+else if (name === "b") {
+    alert("b");
+} 
+else {
+    alert("c")
+}
+
+// In a series of if tests, JavaScript stops testing whenever a condition tests true.
+```
+
+
+
 
 
 
