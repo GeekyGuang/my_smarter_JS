@@ -48,6 +48,14 @@ if (name === "Lucy") {
 }
 ```
 
+- comparison
+```javascript
+=== // is equal to 
+!== // is unequal to 
+==  
+!=
+```
+
 
 
 
