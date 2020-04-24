@@ -75,7 +75,11 @@ else {
 
 - &&且 或||
 
-
+- array
+```javascript
+var array = [1, "hello", 100, "J", "Life"];
+var name = array[1];
+```
 
 
 
