@@ -73,6 +73,8 @@ else {
 // In a series of if tests, JavaScript stops testing whenever a condition tests true.
 ```
 
+- &&且 或||
+
 
 
 
