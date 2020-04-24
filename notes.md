@@ -79,7 +79,29 @@ else {
 ```javascript
 var array = [1, "hello", 100, "J", "Life"];
 var name = array[1];
+
+
+var array2 = [];
+array2[2] = "hello"; 
+array2[6] = "sss"; // 可任意索引赋值，未赋值的则为undefined
+
+array.pop(); // 弹出最后一个element, 不可指定位置
+array.push("one", "two"); // 在最后插入
+
+array.length
+array["length"]  // 数组长度
+
+// 不能用array[-1]访问最后一个element
+
+
+var pets = ["cat", "dog", "lamb", "pony"];
+pets.shift(); //"cat" 从第一个位置弹出 // pets ["dog", "lamb", "pony"]
+pets.unshift("sanke", "hippo"); // 从最开始插入 // pets["sanke", "hippo", "dog", "lamb", "pony"]
+pets.splice(2, 1);// ["dog"] 从索引2的位置开始删掉1个元素
+pets.splice(2, 0, "pigeon", "parrot"); // 从索引2的位置删掉0个元素并插入指定的元素 // pets ["sanke", "hippo", "pigeon", "parrot", "lamb", "pony"]
+pets.slice(2,4);// ["pigeon", "parrot"] // 索引2到3的切片，不包括4
 ```
+
 
 
 
