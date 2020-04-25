@@ -110,15 +110,29 @@ var pets = ["cat", "dog", "lamb", "pony"];
 var len = pets.length;  // get the length of an array
 var matchFound = false; // a flag for matching
 for (var i = 0; i < len; i++) {
-  if (pets[i] === "poney") {
-      matchFound = true;
-      alert("Good for you!");
-      break; // break out
-  }
+    if (pets[i] === "poney") {
+        matchFound = true;
+        alert("Good for you!");
+        break; // break out
+    }
 }
 
 if (matchFound === false) {
     alert("Not Found!");
+}
+
+
+var firstNames = ["BlueRay ", "Upchunk ", "Lojack ", "Gizmo ", "Do-Rag "];
+var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+var fullNames = [];
+for (var i = 0; i < firstNames.length; i ++) {
+    for (var j = 0; j < lastNames.length; j++) {
+        fullNames.push(firstNames[i] + lastNames[j]);
+    }
+}
+
+for (i = 0; i < fullNames.length; i++) {
+    console.log(fullNames[i]);
 }
 ```
 
