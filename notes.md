@@ -160,6 +160,12 @@ if (firstChar !== -1) {
 alert(message);
 alert(message.indexOf('a'));
 alert(message.lastIndexOf('a')); // return the first index of the first character
+
+var i = 2
+message.charAt(i) // identify the character at index i
+
+var lastChar = str.charAt(str.length - 1);
+
 ```
 
 
