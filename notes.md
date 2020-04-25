@@ -121,7 +121,7 @@ if (matchFound === false) {
     alert("Not Found!");
 }
 
-
+// loop nested
 var firstNames = ["BlueRay ", "Upchunk ", "Lojack ", "Gizmo ", "Do-Rag "];
 var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
 var fullNames = [];
@@ -139,6 +139,17 @@ for (i = 0; i < fullNames.length; i++) {
 var city = prompt("Your city?");
 alert(city.toLowerCase());  // convert to lowercase
 alert(city.toUpperCase());  // convert to uppercase
+```
+
+- string
+```javascript
+var str = "hello"
+var firstChar = str.slice(0, 1); // the first element
+var someChar = str.slice(1)  // from the second to the end
+str = firstChar.toUpperCase() + someChar.toLowerCase();
+
+str.length   // length of a string
+
 ```
 
 
