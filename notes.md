@@ -148,8 +148,18 @@ var firstChar = str.slice(0, 1); // the first element
 var someChar = str.slice(1)  // from the second to the end
 str = firstChar.toUpperCase() + someChar.toLowerCase();
 
-str.length   // length of a string
+str.length   // get the length of a string
 
+// indexOf()
+
+var message = "He got mugged an hour ago";
+var firstChar = message.indexOf("mugged");  // return the index of the first character
+if (firstChar !== -1) {
+    message = message.slice(0, firstChar) + "married" + message.slice(firstChar + 6);  // replace
+}
+alert(message);
+alert(message.indexOf('a'));
+alert(message.lastIndexOf('a')); // return the first index of the first character
 ```
 
 
