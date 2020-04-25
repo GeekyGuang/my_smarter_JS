@@ -166,6 +166,9 @@ message.charAt(i) // identify the character at index i
 
 var lastChar = str.charAt(str.length - 1);
 
+xxx = xxx.replace('a', 'e');  // replace the first 'a' with 'e'
+xxx = xxx.replace(/e/g, 'a'); // replace all 'e' with 'a'
+
 ```
 
 
