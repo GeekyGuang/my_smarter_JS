@@ -103,7 +103,24 @@ pets.slice(2,4);// ["pigeon", "parrot"] // 索引2到3的切片，不包括4
 ```
 
 
+- for loop
+```javascript
+// i stands for "iteration." 迭代
+var pets = ["cat", "dog", "lamb", "pony"];
+var len = pets.length;  // get the length of an array
+var matchFound = false; // a flag for matching
+for (var i = 0; i < len; i++) {
+  if (pets[i] === "poney") {
+      matchFound = true;
+      alert("Good for you!");
+      break; // break out
+  }
+}
 
+if (matchFound === false) {
+    alert("Not Found!");
+}
+```
 
 
 
