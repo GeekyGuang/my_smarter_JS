@@ -134,7 +134,14 @@ for (var i = 0; i < firstNames.length; i ++) {
 for (i = 0; i < fullNames.length; i++) {
     console.log(fullNames[i]);
 }
+
+
+var city = prompt("Your city?");
+alert(city.toLowerCase());  // convert to lowercase
+alert(city.toUpperCase());  // convert to uppercase
 ```
+
+
 
 
 
