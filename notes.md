@@ -213,6 +213,14 @@ Number(undefined); // NaN
 1.55555555.toFixed(2);  // "1.56"
 ```
 
+- Date 
+```javascript
+var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+var now = new Date(); // Date object, get date from the computer system
+theDay = now.getDay(); // 0 for Sunday through 6
+var nameOfToday = dayNames[theDay];
+
+```
 
 
 
