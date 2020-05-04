@@ -198,6 +198,19 @@ var numberOfStars = Math.floor(improvedNum); // make a number from 1 to 6
 
 parseInt("1.233"); // 1
 parseFloat("1.232abc"); // 1.232
+
+Number("1.22a"); // NaN
+Number("2"); //2
+Number("1.22"); //1.22
+Number(null); // 0
+Number(undefined); // NaN
+
+1.22.toString(); // "1.22"
+
+
+// round off to specified places
+1.5555555.toFixed();  // "2"
+1.55555555.toFixed(2);  // "1.56"
 ```
 
 
