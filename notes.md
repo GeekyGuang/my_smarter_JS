@@ -171,6 +171,14 @@ xxx = xxx.replace(/e/g, 'a'); // replace all 'e' with 'a'
 
 ```
 
+- 取整
+```javascript
+Math.round(1.23)  // 四舍五入
+Math.ceil(1.1)  // 向上取整
+Math.floor(-0.1) // 向下取整
+```
+
+
 
 
 
