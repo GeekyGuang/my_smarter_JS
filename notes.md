@@ -220,6 +220,15 @@ var now = new Date(); // Date object, get date from the computer system
 theDay = now.getDay(); // 0 for Sunday through 6
 var nameOfToday = dayNames[theDay];
 
+now.getDay(); // 0-6
+now.getDate(); // 1-31
+now.getFullYear(); 
+now.getHours(); // 0-23
+now.getMilliseconds(); // 0-999
+now.getTime(); // 1588575001953
+now.getSeconds(); // 0-59
+now.getMonth(); // 0-11
+now.getMinutes() // 0-59
 ```
 
 
