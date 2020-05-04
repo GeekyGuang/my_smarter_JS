@@ -189,6 +189,18 @@ var improvedNum = (bigDecimal * 6) + 1;  // make a number from 1 to 6.9999999999
 var numberOfStars = Math.floor(improvedNum); // make a number from 1 to 6
 ```
 
+- 转换
+```javascript
+"22" - 10
+// 12 automatically convert to decimal
+"22" + 10
+// "2210" automatically convert to string
+
+parseInt("1.233"); // 1
+parseFloat("1.232abc"); // 1.232
+```
+
+
 
 
 
