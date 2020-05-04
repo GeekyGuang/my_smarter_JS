@@ -176,6 +176,17 @@ xxx = xxx.replace(/e/g, 'a'); // replace all 'e' with 'a'
 Math.round(1.23)  // 四舍五入
 Math.ceil(1.1)  // 向上取整
 Math.floor(-0.1) // 向下取整
+
+var num = 2.55523223;
+num = Math.round(num);
+```
+
+- random
+```javascript
+var bigDecimal = Math.random() // generate a 16-place decimal
+// 0.5461486542240981
+var improvedNum = (bigDecimal * 6) + 1;  // make a number from 1 to 6.9999999999...
+var numberOfStars = Math.floor(improvedNum); // make a number from 1 to 6
 ```
 
 
