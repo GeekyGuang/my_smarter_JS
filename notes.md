@@ -376,6 +376,18 @@ do {
 // Generally, the best place for scripts, though, is at the end of the body section. This guarantees that CSS styling and image display won't get held up while scripts are loading.
 ```
 
+- comments
+```javascript
+// single line
+
+/*
+multible
+line
+*/
+
+// HTML <!-- -->
+// CSS /* */
+```
 
 
 
