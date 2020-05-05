@@ -259,6 +259,72 @@ function showMessage(m, string, num) { // parameters形参
 
 var month = "May";
 showMessage(month, "'s winner is ", 23);  // arguments实参
+
+function calcTot(price) {
+    return price + calcShip(price);
+}
+
+function doSomething() {
+    return "hello";
+}
+
+alert(doSomething());
+```
+
+- global vs local
+>A global variable is one that's declared in the main body of your code—that is, not inside
+a function.
+>A local variable is one that's declared inside a function. It can be either a parameter of
+the function, which is declared implicitly by being named as a parameter, or a variable
+declared explicitly in the function with the **var** keyword.
+```javascript
+// 1
+var hey = "hello";
+function doSth(){
+    hey = "ddd";
+}
+
+doSth();
+alert(hey);  // ddd
+
+// 2
+
+function doSth(){
+  var hey = "ddd";
+}
+
+doSth();
+alert(hey);  // Error
+
+
+// 3
+function doSth(){
+    hey = "ddd";  // without var is global
+}
+
+doSth();
+alert(hey);  // ddd
+
+
+// 4
+var hey = "Hello";
+function doSth(){
+    var hey = "ddd";  // without var is global
+}
+
+doSth();
+alert(hey);  // Hello
+
+// 5
+
+var hey = "Hello";
+function doSth(){
+    var hey = "ddd";  // global is invalid
+    return hey + hey;
+}
+
+alert(doSth());  // dddddd
+
 ```
 
 
