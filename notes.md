@@ -359,7 +359,22 @@ do {
 } while(i < 10);
 ```
 
+- scripts
+```javascript
+<script>
+  function sayHi() {
+    alert("Hello world!");
+  }
+  function sayBye() {
+    alert("Buh-bye!");
+  }
+</script>
 
+// or
+<script src="whatever.js"></script>
+
+// Generally, the best place for scripts, though, is at the end of the body section. This guarantees that CSS styling and image display won't get held up while scripts are loading.
+```
 
 
 
