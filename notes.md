@@ -344,6 +344,21 @@ switch(name) {
 
 ```
 
+- while
+```javascript
+var i = 0;
+while(i < 10) {
+    alert(i);
+    i++;
+}
+
+var i = 11;
+do {
+    alert(i);
+    i++;
+} while(i < 10);
+```
+
 
 
 
