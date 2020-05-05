@@ -327,6 +327,25 @@ alert(doSth());  // dddddd
 
 ```
 
+- switch
+```javascript
+
+var name = "lucy";
+switch(name) {
+    case "jack" :
+      alert("jack");
+      break;  // 没有break会一直执行到最后一句After a true case is found, JavaScript not only executes the statement(s) immediately below that case. It executes all the statements for all the cases below it. 
+    case "lucy" :
+      alert("lucy");
+      break;
+    default :
+      alert("Sorry");
+}
+
+```
+
+
+
 
 
 
