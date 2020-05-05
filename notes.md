@@ -229,6 +229,17 @@ now.getTime(); // 1588575001953
 now.getSeconds(); // 0-59
 now.getMonth(); // 0-11
 now.getMinutes() // 0-59
+
+
+var msDiff = new Date("June 30, 2035").getTime() - new Date().getTime();
+var dasTillDoom = Math.floor(msDiff / (1000 * 60 * 60 * 24));
+
+var time = new Date("July 30, 2025 13:23:15");
+// Tue May 19 2020 09:03:30 GMT+0800 (中国标准时间)
+
+time.setDate(20);  // 修改日期
+time.setYear(2021);
+
 ```
 
 
