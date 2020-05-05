@@ -242,6 +242,18 @@ time.setYear(2021);
 
 ```
 
+- Function
+```javascript
+function tellTime() {
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    alert("Time: " + hour + ":" + minute);
+}
+
+tellTime();
+```
+
 
 
 
