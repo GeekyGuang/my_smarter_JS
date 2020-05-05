@@ -252,6 +252,13 @@ function tellTime() {
 }
 
 tellTime();
+
+function showMessage(m, string, num) { // parameters形参
+    alert(m + string + num);
+}
+
+var month = "May";
+showMessage(month, "'s winner is ", 23);  // arguments实参
 ```
 
 
