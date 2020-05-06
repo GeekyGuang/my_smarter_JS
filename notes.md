@@ -389,6 +389,23 @@ line
 // CSS /* */
 ```
 
+- Event
+```html
+<!-- inline event-handling -->
+<!-- href="#"会重新加载当前页面 -->
+    <a href="#" onclick="alert('reload current page')">reload current page</a>
+    <br>
+    <a href="JavaScript:void(0)" onclick="alert('do nothing')">do nothing</a>
+    <br>
+    <a href="JavaScript:void(0)" onclick="popup('Hi');">popup</a>
+
+    <script>
+        function popup(message) {
+            alert(message);
+        }
+    </script>
+```
+
 
 
 
