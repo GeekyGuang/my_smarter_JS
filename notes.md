@@ -393,7 +393,8 @@ line
 ```html
 <!-- inline event-handling -->
 <!-- href="#"会重新加载当前页面 -->
-    <a href="#" onclick="alert('reload current page')">reload current page</a>
+<!-- onClick isn't case-sensitive. You could write onclick, ONCLICK, or OnClIcK and it would work.-->
+    <a href="#" onclick="alert('reload current page')" >reload current page</a>
     <br>
     <a href="JavaScript:void(0)" onclick="alert('do nothing')">do nothing</a>
     <br>
