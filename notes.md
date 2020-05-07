@@ -399,7 +399,8 @@ line
     <a href="JavaScript:void(0)" onclick="alert('do nothing')">do nothing</a>
     <br>
     <a href="JavaScript:void(0)" onclick="popup('Hi');">popup</a>
-
+    <input type="button" value="this is a clickbait, watch out!" onClick="alert('to make or break?');">
+    <a href="JavaScript:void(0)"><img src="images/click_tutorial.png" witch="50" height="50" onClick="popup('Hello World!')"></a>
     <script>
         function popup(message) {
             alert(message);
