@@ -401,6 +401,7 @@ line
     <a href="JavaScript:void(0)" onclick="popup('Hi');">popup</a>
     <input type="button" value="this is a clickbait, watch out!" onClick="alert('to make or break?');">
     <a href="JavaScript:void(0)"><img src="images/click_tutorial.png" witch="50" height="50" onClick="popup('Hello World!')"></a>
+    <img src="images/before-pic.png" onmouseover="src='images/after-pic.png'" onmouseout="src='images/before-pic.png'">
     <script>
         function popup(message) {
             alert(message);
