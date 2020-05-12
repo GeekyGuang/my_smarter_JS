@@ -25,6 +25,13 @@
         <input type="submit" value="Submit">
     </form>
 
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+
     <script>
         function popup(message) {
             alert(message);
@@ -35,6 +42,27 @@
             if (val === "") {
                 alert("Email address required.");
             }
+        }
+
+        function fillCity() {
+            var cityName;
+            var zipEntered = document.getElementById("zip").value;
+            switch (zipEntered) {
+                case "60608" :
+                    cityName = "Chicago";
+                    break;
+                case "68114" :
+                    cityName = "Omaha";
+                    break;
+                case "53212" :
+                    cityName = "Milwaukee";
+                    break;
+                default: 
+                    cityName = "";
+                    break;
+                
+            }
+            document.getElementById("city").value = cityName;
         }
     </script>
 </body>

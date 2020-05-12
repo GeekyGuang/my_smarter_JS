@@ -408,7 +408,11 @@ line
         function popup(message) {
             alert(message);
         }
+
+        val = document.getElementById(fieldId).value;  // 读取
+        document.getElementById("city").value = cityName; // 传值
     </script>
+
 ```
 
 
