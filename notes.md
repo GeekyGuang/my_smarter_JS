@@ -411,6 +411,9 @@ line
 
         val = document.getElementById(fieldId).value;  // 读取
         document.getElementById("city").value = cityName; // 传值
+
+        var txt = document.getElementById("div1").innerHTML
+        var txt = document.getElementById("div1").innerText
     </script>
 
 ```
