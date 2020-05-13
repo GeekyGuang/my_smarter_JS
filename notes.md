@@ -414,6 +414,13 @@ line
 
         var txt = document.getElementById("div1").innerHTML
         var txt = document.getElementById("div1").innerText
+
+        function makeInvisible() {
+            document.getElementById("ugly").className = "hidden";  // 清除掉原有的class，替换成新的
+        }
+        function makeInvisible() {
+            document.getElementById("ugly").className += " hidden";  // 保留原有的class，添加新的
+        }
     </script>
 
 ```
