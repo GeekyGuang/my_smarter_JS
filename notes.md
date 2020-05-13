@@ -421,6 +421,22 @@ line
         function makeInvisible() {
             document.getElementById("ugly").className += " hidden";  // 保留原有的class，添加新的
         }
+
+        function swapPic() {
+            var pic = document.getElementById("before");
+            pic.src = "after-pic.jpg";
+        }
+
+        function enlargeForm() {
+            var frm = document.getElementById("link1");
+            frm.className = "jumbo";
+        }
+
+        function makeBig() {
+            document.getElementById("p1").style.fontSize = "2em";
+        }
+
+        var m = document.getComputedStyle("mainPic").margin;
     </script>
 
 ```

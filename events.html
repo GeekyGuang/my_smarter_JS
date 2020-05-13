@@ -43,7 +43,20 @@
         <a href="javaScript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
     </p>
 
+    <img src="images/after-pic.png" id="before" onMouseover="swapPic();">
+    <br>
+    <br>
+    <img src="images/after-pic.png" id="before2" onMouseover="swapPic2(id, 'images/before-pic.png');">
+
     <script>
+        function swapPic() {
+            document.getElementById("before").src = "images/before-pic.png";
+        }
+
+        function swapPic2(eId, newSrc) {
+            document.getElementById(eId).src = newSrc;
+        }
+
         function makeInvisible() {
             document.getElementById("ugly").className = "hidden";  // 清除掉原有的class，替换成新的
         }
