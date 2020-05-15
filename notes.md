@@ -458,6 +458,9 @@ Starting at the bottom of the chart, the text "Nor to this." is a child of <p>, 
 var d = document.getElementById("ny");
 var p = d.childNodes[1]; // 2nd child
 var contents = p.innerHTML;
+
+var nType = targetNode.nodeType; // 1 element, 3 text
+
 ```
 
 
