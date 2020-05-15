@@ -438,18 +438,23 @@ line
 
         var m = document.getComputedStyle("mainPic").margin;
 
-        var par = document.getElementByTagName("p");
+        var par = document.getElementsByTagName("p");
 
         for (var i=0; i<par.length; i++) {
             par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
         }
 
-        var pics = document.getElementByTagName("img");
-        var divs = document.getElementByTagName("div");
-        var ulists = document.getElementByTagName("ul");
+        var pics = document.getElementsByTagName("img");
+        var divs = document.getElementsByTagName("div");
+        var ulists = document.getElementsByTagName("ul");
     </script>
 
 ```
+
+- DOM document object model
+Starting at the bottom of the chart, the text "Nor to this." is a child of <p>, which is a child of <div>, which is a child of <body>, which is a child of <html>, which is a child of the document.
+
+
 
 
 
