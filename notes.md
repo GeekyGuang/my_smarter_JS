@@ -461,6 +461,13 @@ var contents = p.innerHTML;
 
 var nType = targetNode.nodeType; // 1 element, 3 text
 
+
+var targetNode = parentNode.firstChild;
+var targetNode = parentNode.lastChild;
+var targetNode = kidNode.parentNode;
+var targetNode = firstEl.nextSibling;
+var targetNode = firstEl.previousSibling;
+
 ```
 
 
