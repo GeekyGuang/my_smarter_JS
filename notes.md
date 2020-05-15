@@ -454,7 +454,11 @@ line
 - DOM document object model
 Starting at the bottom of the chart, the text "Nor to this." is a child of <p>, which is a child of <div>, which is a child of <body>, which is a child of <html>, which is a child of the document.
 
-
+```javascript
+var d = document.getElementById("ny");
+var p = d.childNodes[1]; // 2nd child
+var contents = p.innerHTML;
+```
 
 
 
