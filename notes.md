@@ -468,6 +468,10 @@ var targetNode = kidNode.parentNode;
 var targetNode = firstEl.nextSibling;
 var targetNode = firstEl.previousSibling;
 
+var parent = document.getElementById("div1");
+var target = parent.firstChild;
+nName = target.nodeName; // P, IMG, #text
+nValue = target.nodeValue; // element的value是null
 ```
 
 
