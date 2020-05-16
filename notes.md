@@ -472,6 +472,17 @@ var parent = document.getElementById("div1");
 var target = parent.firstChild;
 nName = target.nodeName; // P, IMG, #text
 nValue = target.nodeValue; // element的value是null
+
+var parentNode = document.getElementById("d1");
+var nodeList = parentNode.childNodes;   // 类似于getElementsByTagName
+var howManyKids = nodeList.length;
+
+var numberPics = 0;
+for (var i = 0; i < howManyKids; i++) {
+    if (nodelist[i].nodeName.toLowerCase() === "img") {
+        numberPics++;
+    }
+}
 ```
 
 
