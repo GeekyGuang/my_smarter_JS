@@ -498,6 +498,20 @@ var numOfItems = list.length;
 var nName = list[2].nodeName;
 var nValue = list[2].nodeValue;
 
+
+var nodeToAdd = document.createElement("p");
+var imgNodeToAdd = document.createElement("img");
+nodeToAdd.setAttribute("class", "regular");
+imgNodeToAdd.setAttribute("border", "1");
+var newTxt = document.createTextNode("Hello!");
+nodeToAdd.appendChild(newTxt);
+
+var pNode = document.createElement("p");
+var txt = document.createTextNode("forever love");
+p.setAttribute("id", "love");
+pNode.appendChild(txt);
+
+
 ```
 
 
