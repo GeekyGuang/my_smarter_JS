@@ -483,6 +483,15 @@ for (var i = 0; i < howManyKids; i++) {
         numberPics++;
     }
 }
+
+
+var target = document.getdElementById("p1");
+var hasClass = target.hasAttribute("class"); // check if it has an attribute called "calss"  , return true/false
+
+var target = document.getElementById("div1");
+var attVal = target.getAttribute("class"); // get attribute value
+
+target.setAttribute("class", "special"); // set attribute value
 ```
 
 
