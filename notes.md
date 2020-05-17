@@ -523,6 +523,24 @@ parentDiv.removeChild(paragraph2);
 ```
 
 
+- object
+```javascript
+/* Properties are just variables that are attached to an object. */
+// attributes are for HTML elements
+
+var plan1 = {  // curly bracket
+    name: "Basic",
+    price: 3.99,
+    space: 100,
+    transfer: 1000,
+    pages: 10
+};
+
+plan1.discountMonths = [6, 7, 11];
+var mo1 = plan1.discountMonths[1];
+
+```
+
 
 
 
