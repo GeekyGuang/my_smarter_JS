@@ -511,6 +511,14 @@ var txt = document.createTextNode("forever love");
 p.setAttribute("id", "love");
 pNode.appendChild(txt);
 
+var parentDiv = document.getElementById("div1");
+parentDiv.appendChild(pNode); // at the end
+
+paragraph1 = parentDiv.firstChild;
+parentDiv.insertBefore(newParagraph, paragraph1)  
+
+paragraph2 = parentDiv.childNodes[1];
+parentDiv.removeChild(paragraph2);
 
 ```
 
