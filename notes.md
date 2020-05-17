@@ -492,6 +492,12 @@ var target = document.getElementById("div1");
 var attVal = target.getAttribute("class"); // get attribute value
 
 target.setAttribute("class", "special"); // set attribute value
+
+var list = document.getElementById("p1").attributes;
+var numOfItems = list.length;
+var nName = list[2].nodeName;
+var nValue = list[2].nodeValue;
+
 ```
 
 
