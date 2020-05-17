@@ -539,6 +539,11 @@ var plan1 = {  // curly bracket
 plan1.discountMonths = [6, 7, 11];
 var mo1 = plan1.discountMonths[1];
 
+var deal4 = {}; // creat an object without any properties
+deal4.market = undefined; // create a property and assign it a value later
+delete deal4.market; // delete a property
+propertyExists = "market" in deal4; // check to see if a property exists
+
 ```
 
 
