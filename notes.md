@@ -598,6 +598,30 @@ var plan1 = {
 
 ```
 
+- constructor 构造函数
+```javascript
+function Plan(name, price, space, transfer, pages) {
+    this.name = name;
+    this.price = price;
+    this.space = space;
+    this.transfer = transfer;
+    this.pages = pages;
+}
+
+var plan1 =new Plan("Basic", 3.99, 100, 1000, 10)  // new
+
+// parameters 可以和 properties不同
+function Plan(name, price, space, transfer, pages) {
+    this.doc = name;
+    this.grumpy = price;
+    this.sleepy = space;
+    this.bashful = transfer;
+    this.sneezy = pages;
+}
+
+
+```
+
 
 
 
