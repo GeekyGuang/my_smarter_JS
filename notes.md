@@ -657,6 +657,17 @@ Plan.prototype.cancelable = true;
 plan1.cancelable = false; 
 
 
+// A method is a type of property of an object
+
+var gotTheProperty = "price" in plan1;  // 判断是否有这个method/property
+
+var listOfProperties = [];
+for (var prop in plan1) {
+    listOfProperties.push(prop);
+}
+
+
+var isOwnedProperty = plan1.hasOwnProperty("price");  // property not inherited
 ```
 
 
