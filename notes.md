@@ -635,6 +635,26 @@ function Plan(name, price, space, transfer, pages) {
     this.sneezy = pages;
 }
 
+// 为了不重复创建相同的method
+Plan.prototype.calcAnnual = function(percenIfDisc) {
+    var bestPrice = this.price;  // this
+    var currDate = new Date();
+    var thisMo = currDate.getMonth();
+    for (var i = 0; i < this.discountMonths.length; i++) {
+        if (this.discountMonths[i] === thisMo) {
+            bestPrice = this.price * percentIfDisc;
+            break;
+        }
+    }
+
+    return bestPrice * 12
+}
+
+// prototype property
+Plan.prototype.cancelable = true;
+
+plan1.cancelable = false; 
+
 
 ```
 
