@@ -636,6 +636,7 @@ function Plan(name, price, space, transfer, pages) {
 }
 
 // 为了不重复创建相同的method
+// prototype : allows all objects created by a particular constructor to share the same property or function
 Plan.prototype.calcAnnual = function(percenIfDisc) {
     var bestPrice = this.price;  // this
     var currDate = new Date();
