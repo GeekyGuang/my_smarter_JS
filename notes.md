@@ -544,6 +544,58 @@ deal4.market = undefined; // create a property and assign it a value later
 delete deal4.market; // delete a property
 propertyExists = "market" in deal4; // check to see if a property exists
 
+
+// You can attach a function to an object, and the function becomes that object's method. 
+
+// method
+
+var plan1 = {
+    name: "Basic",
+    price: 3.99,
+    space: 100,
+    transfer: 1000,
+    pages: 10,
+    discountMonths: [6, 7],
+    calcAnnual: function(percentIfDisc) {
+        var bestPrice = plan1.price;
+        var currDate = new Date();
+        var thisMo = currDate.getMonth();
+        for (var i = 0; i < plan1.discountMonths.length; i++) {
+            if (plan1.discountMonths[i] === thisMo) {
+                bestPrice = plan1.price * percentIfDisc;
+                break;
+            }
+        }
+
+        return bestPrice * 12
+    }
+}
+
+// 将plan1改成this
+// When JavaScript sees this keyword, it knows you're referring to the object that's being defined.
+
+var plan1 = {
+    name: "Basic",
+    price: 3.99,
+    space: 100,
+    transfer: 1000,
+    pages: 10,
+    discountMonths: [6, 7],
+    calcAnnual: function(percentIfDisc) {
+        var bestPrice = this.price;  // this
+        var currDate = new Date();
+        var thisMo = currDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++) {
+            if (this.discountMonths[i] === thisMo) {
+                bestPrice = this.price * percentIfDisc;
+                break;
+            }
+        }
+
+        return bestPrice * 12
+    }
+}
+
 ```
 
 
