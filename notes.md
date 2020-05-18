@@ -598,17 +598,33 @@ var plan1 = {
 
 ```
 
-- constructor 构造函数
+- constructor function构造函数
 ```javascript
 function Plan(name, price, space, transfer, pages) {
+    // properties
     this.name = name;
     this.price = price;
     this.space = space;
     this.transfer = transfer;
     this.pages = pages;
+    // methods
+    this.calcAnnual = function(percentIfDisc) {
+        var bestPrice = this.price;  // this
+        var currDate = new Date();
+        var thisMo = currDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++) {
+            if (this.discountMonths[i] === thisMo) {
+                bestPrice = this.price * percentIfDisc;
+                break;
+            }
+        }
+
+        return bestPrice * 12
+    };
 }
 
-var plan1 =new Plan("Basic", 3.99, 100, 1000, 10)  // new
+var plan1 =new Plan("Basic", 3.99, 100, 1000, 10);  // new
+var annualPrice = plan1.calcAnnual(.85);
 
 // parameters 可以和 properties不同
 function Plan(name, price, space, transfer, pages) {
