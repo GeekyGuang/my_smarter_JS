@@ -682,6 +682,14 @@ window.location.hostname  // "www.mybeautifulsite.com"
 window.location.pathname  // "/products/page333.html"
 window.location.hash  // "#humidifier"
 
+window.location.href = "http://www.baidu.com"
+window.location.assign("http://www.baidu.com")  // 保存历史，可以回退
+window.location.replace("http://www.baidu.com") // 不能回退
+
+window.location.reload(true) // reload from server
+window.location.reload(false)  // reload from cache
+window.location.reload(false)  // reload from cache
+window.location.href = window.location.href  // reload
 
 
 ```
