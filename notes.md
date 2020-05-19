@@ -691,6 +691,20 @@ window.location.reload(false)  // reload from cache
 window.location.reload(false)  // reload from cache
 window.location.href = window.location.href  // reload
 
+history.back();
+history.forward();
+history.go(-3);
+history.go(2);
+document.referrer;
+
+var monkeyWindow = window.open();  // handle
+var windowContent = "<h1>Capuchin monkey</h1><img src= 'monkey.jpg'><p>The word capuchin derives from a group of friars<br>named the Order of Friars Minor Capuchin who wear<br>brown robes with large hoods covering their heads.</p>"
+monkeyWindow.document.write(windowContent);
+
+monkeyWindow.location.assign("http://www.animals.com/capuchin.html");
+monkeyWindow.location.href = "http://www.animals.com/capuchin.html";
+monkeyWindow.open("http://www.animals.com/capuchin.html");
+monkeyWindow.close();
 
 ```
 
