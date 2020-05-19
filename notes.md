@@ -671,6 +671,21 @@ var isOwnedProperty = plan1.hasOwnProperty("price");  // property not inherited
 ```
 
 
+- broswer control
+```javascript
+// http://www.mybeautifulsite.com/products/page333.html#humidifier
+
+window.location.href   // "http://www.mybeautifulsite.com/products/page333.html#humidifier"
+document.url 
+
+window.location.hostname  // "www.mybeautifulsite.com"
+window.location.pathname  // "/products/page333.html"
+window.location.hash  // "#humidifier"
+
+
+
+```
+
 
 
 
