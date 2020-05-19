@@ -706,6 +706,22 @@ monkeyWindow.location.href = "http://www.animals.com/capuchin.html";
 monkeyWindow.open("http://www.animals.com/capuchin.html");
 monkeyWindow.close();
 
+
+var monkeyWindow = window.open("monk.html", "win1")  // second parameter is a window name
+var w = window.open("","","width=420,height=380,left=200,top=100")
+
+function checkForPopBlocker() {
+    var testPop = window.open("","","width=100,height=100");
+    if (testPop === null) {  // IE undefined
+        alert("Please disable your popup blocker.");
+    }
+    testPop.close();
+}
+
+<body onLoad="checkForPopBlocker();">  // check when load
+
+if (testPop === null || typeof(testPop) === "undefined") {}
+
 ```
 
 
