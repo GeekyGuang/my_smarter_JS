@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="javaScript:void(0)" id="love">520</a>
+    <script>
+        var love = document.getElementById("love");
+        love.onclick = showLove2;   // onclick必须小写， 函数名后不能有括号,有括号一打开页面就执行了
+        
+        function showLove2() {
+            alert("hello");
+        }
+        function showLove(message) {
+            alert(message);
+
+        }
+    </script>
+</body>
+</html>
