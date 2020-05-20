@@ -12,7 +12,25 @@
         <input type="submit" value="Submit Form">
     </form>
 
+    <form onSubmit="return checkForSelection('states');">
+        <select id="states">
+            <option value="" selected="selected">SELECT A STATE</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
+    </form>
+
     <script>
+        function checkForSelection(selectId) {
+            var targetItem = document.getElementById(selectId)
+            if (targetItem.selectedIndex === 0) {
+                alert("Please select a state.");
+                return false;
+            }
+        }
         function checkForLastName() {
             var targetField = document.getElementById("lastNameField");
             if (targetField.value.length === 0) {
