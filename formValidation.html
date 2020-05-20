@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <form onSubmit="return validateRadios();">
+        <input type="radio" name="r1" value="cat"> Cat<br>
+        <input type="radio" name="r1" value="bat"> Bat<br>
+        <input type="radio" name="r1" value="hat"> Hat<br>
+        <input type="submit" value="Submit Form">
+    </form>
+
     <form onSubmit="return checkForLastName();">
         Please enter your last name.<br>
         <input type="text" id="lastNameField">
@@ -24,6 +31,21 @@
     </form>
 
     <script>
+        // if (isNaN(thisChar)) {} 判断是不是not a number
+
+        function validateRadios() {
+            var radios = document.getElementsByName("r1");  // ByName
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {  // checked
+                    return true;
+                }
+            }
+
+            alert("Please check one.");
+            return false;
+        }
+
+
         function checkForSelection(selectId) {
             var targetItem = document.getElementById(selectId)
             if (targetItem.selectedIndex === 0) {
