@@ -724,8 +724,17 @@ if (testPop === null || typeof(testPop) === "undefined") {}
 
 ```
 
-- form validation
+- exception
 ```javascript
+
+// The try...catch approach is mainly useful for spotting undefined variables
+try {
+    aler("Hello");
+}
+catch(err) {  // err是自定义变量
+    alert(err)
+}
+
 
 ```
 
